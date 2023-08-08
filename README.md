@@ -4,9 +4,11 @@ Master automated software testing locally and in the cloud.
 
 ## 🧠 You will learn
 
-✅ how to test a React web app using different types of tests
+✅ how to test a Nuxt web app
 
-✅ 
+✅ Use Sauce Labs continuous testing grid
+
+✅ Use WebdriverIO comprehensive testing capabilities
 
 😉 And maybe more...
 
@@ -14,22 +16,12 @@ Master automated software testing locally and in the cloud.
 
 1. Experience JavaScript + Node.js
 
-## 🔧Technologies you will use
-
-1. ReactJS
-2. Cypress 10
-3. Happo.io
-4. cypress-audit
-5. Gitpod
-
 ## Table Of Contents
 
 - Setup
-- [E2E UI testing w/ Cypress](./docs/E2E-TESTS.md)
-- [Visual e2e testing](./docs/VISUAL.md)
-- Break ☕
-- [Performance and accessibility testing](./docs/PERF.md)
-- [Conclusions](./docs/CONCLUSIONS.md)
+- E2E UI testing w/ WebdriverIO
+- Scaling automation to the cloud
+- Conclusions
 
 ## Your Co-Instructor: Christian Bromann
 
@@ -42,8 +34,6 @@ Master automated software testing locally and in the cloud.
 - 😄 Pronouns: he/him
 - ⚡ Fun fact: I'm a vegan that's super pasionate about saving the planet, saving animals, and helping underpriveleged communities
 - 📫 Follow me for testing and dev training
-  - [JS Testing Tips Newsletter](https://ultimateqa.ck.page/js-testing-tips)
-  - [Testing training on Youtube](https://youtube.com/ultimateqa)
   - [LinkedIn for professional connections](https://www.linkedin.com/in/nikolayadvolodkin/)
   - [Twitter for 🔥 Dev quotes](https://twitter.com/intent/follow?screen_name=nikolay_a00&region=follow_link)
 
@@ -56,7 +46,7 @@ Master automated software testing locally and in the cloud.
 - 🚧 I’m currently working on using AI to improve automated testing. Let's talk :)
 - 💬 Ask me about environmentalism, veganism, test automation, and fitness
 - 😄 Pronouns: he/him
-- ⚡ Fun fact: I'm a vegan that's super pasionate about saving the planet, saving animals, and helping underpriveleged communities
+- ⚡ Fun fact: I'm an Easter-European Jew, born in Uzbekistan, speak Russian, raised in US since 1996
 - 📫 Follow me for testing and dev training
   - [JS Testing Tips Weekly Newsletter](https://ultimateqa.ck.page/js-testing-tips)
   - [Testing training on Youtube](https://youtube.com/ultimateqa)
@@ -195,4 +185,17 @@ WebdriverIO is great for:
 Sauce Labs is great for:
 - Developers that want to test fast and at scale
 - Developers that want to run tests in real browsers, the way users see their apps
-- 
+- Have a complete history of automated testing for your team/org
+
+## Honest feedback
+
+Please take 3 min to leave your [honest and anonymous feedback](https://docs.google.com/forms/d/e/1FAIpQLSefjACp8xGXRiSzzhoud9j18puDlc7lMjJB_HiGRQf-zia7tw/viewform?usp=sf_link)
+
+## Follow Christian
+
+CRISTIAN TO FILL IN
+
+## Follow Nikolay
+
+  - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
+  - [Twitter](https://twitter.com/intent/follow?screen_name=nikolay_a00&region=follow_link)
