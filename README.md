@@ -131,7 +131,7 @@ npm run dev
 
 ## 🏋️‍♂️ 1st Test
 
-Go to `login.test.ts` and try `it('should fail with no input')`
+Go to `tests/specs/exerciseslogin.test.ts` and try `it('should fail with no input')`
 
 CB to show solution
 
