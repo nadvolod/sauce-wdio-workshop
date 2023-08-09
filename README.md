@@ -34,8 +34,8 @@ Master automated software testing locally and in the cloud.
 - 😄 Pronouns: he/him
 - ⚡ Fun fact: I'm a vegan that's super pasionate about saving the planet, saving animals, and helping underpriveleged communities
 - 📫 Follow me for testing and dev training
-  - [LinkedIn for professional connections](https://www.linkedin.com/in/nikolayadvolodkin/)
-  - [Twitter for 🔥 Dev quotes](https://twitter.com/intent/follow?screen_name=nikolay_a00&region=follow_link)
+   - [LinkedIn for professional connections](https://www.linkedin.com/in/nikolayadvolodkin/)
+   - [Twitter for 🔥 Dev quotes](https://twitter.com/intent/follow?screen_name=nikolay_a00&region=follow_link)
 
 ## Your Co-Instructor: Nikolay Advolodkin
 
@@ -48,11 +48,11 @@ Master automated software testing locally and in the cloud.
 - 😄 Pronouns: he/him
 - ⚡ Fun fact: I'm an Easter-European Jew, born in Uzbekistan, speak Russian, raised in US since 1996
 - 📫 Follow me for testing and dev training
-  - [JS Testing Tips Weekly Newsletter](https://ultimateqa.ck.page/js-testing-tips)
-  - [Testing training on Youtube](https://youtube.com/ultimateqa)
-  - [Test Automation Experience Show](https://youtube.com/@test-automation-experience)
-  - [LinkedIn for professional connections](https://www.linkedin.com/in/nikolayadvolodkin/)
-  - [Twitter](https://twitter.com/intent/follow?screen_name=nikolay_a00&region=follow_link)
+   - [JS Testing Tips Weekly Newsletter](https://ultimateqa.ck.page/js-testing-tips)
+   - [Testing training on Youtube](https://youtube.com/ultimateqa)
+   - [Test Automation Experience Show](https://youtube.com/@test-automation-experience)
+   - [LinkedIn for professional connections](https://www.linkedin.com/in/nikolayadvolodkin/)
+   - [Twitter](https://twitter.com/intent/follow?screen_name=nikolay_a00&region=follow_link)
 
 ## ⚙️ Setup
 
@@ -126,8 +126,8 @@ npm run dev
 - Sign up for a [Sauce Labs account](https://bit.ly/3OCzGKT)
 - Have `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` set in your `.env` file based on your credentials that can be obtained in https://app.saucelabs.com/user-settings
 - Set up WebdriverIO in your project through `npm init wdio@latest .` 🤖 WebdriverIO will guide you through it, make sure you select:
-  - `E2E Testing - of Web or Mobile Applications`
-  - `In the cloud using Sauce Labs`
+   - `E2E Testing - of Web or Mobile Applications`
+   - `In the cloud using Sauce Labs`
 
 ## 🏋️‍♂️ 1st Test
 
@@ -158,9 +158,11 @@ Now try
 
 `it('should be fail if credentials are invalid'`
 
-`it('should fail if email is not confirmed'`
-
 CB shows solution
+
+### Registration without a UI
+
+Now try the `it('should be able to login'` test in `tests/specs/exercises/registration.test.ts`. The key here is to login. However, the registration happens on the back end using the `before()`.
 
 ## Project Details features
 
@@ -184,9 +186,11 @@ Now try to run your tests on Chrome/Safari/Windows/Mac. Use [this](https://sauce
 ## Conclusions
 
 WebdriverIO is great for:
+
 - CHRISTIAN TO FILL IN
 
 Sauce Labs is great for:
+
 - Developers that want to test fast and at scale
 - Developers that want to run tests in real browsers, the way users see their apps
 - Have a complete history of automated testing for your team/org
@@ -203,5 +207,5 @@ Please take 3 min to leave your [honest and anonymous feedback](https://docs.goo
 
 ## Follow Nikolay
 
-  - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
-  - [Twitter](https://twitter.com/intent/follow?screen_name=nikolay_a00&region=follow_link)
+- [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
+- [Twitter](https://twitter.com/intent/follow?screen_name=nikolay_a00&region=follow_link)
