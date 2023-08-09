@@ -175,7 +175,9 @@ Why would you want to run in a cloud grid like Sauce?
 - Ability to run on Windows/Mac and all other browsers
 - Ability to run on real mobile devices
 
-### Understanding the Sauce Config
+### Setup
+
+1. CB TO ADD INSTRUCTIONS FOR HOW TO SETUP SAUCE LABS
 
 Now try to run your tests on Chrome/Safari/Windows/Mac. Use [this](https://saucelabs.com/products/platform-configurator) for help
 
