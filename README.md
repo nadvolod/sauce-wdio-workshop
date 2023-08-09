@@ -123,14 +123,15 @@ npm run dev
 
 ## WebdriverIO + Sauce Setup
 
-CB - ADD SETUP INSTRUCTIONS HERE
-
-- Sign up for a [Sauce Labs account](https://bit.ly/3OCzGKT)
+- Sign up for a [Sauce Labs account](https://bit.ly/3OCzGKT)
 - Have `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` set in your `.env` file based on your credentials that can be obtained in https://app.saucelabs.com/user-settings
+- Set up WebdriverIO in your project through `npm init wdio@latest .` 🤖 WebdriverIO will guide you through it, make sure you select:
+  - `E2E Testing - of Web or Mobile Applications`
+  - `In the cloud using Sauce Labs`
 
 ## 🏋️‍♂️ 1st Test
 
-Go to `login.test.ts` and try `it('should fail with no input'`
+Go to `login.test.ts` and try `it('should fail with no input')`
 
 CB to show solution
 
@@ -139,14 +140,15 @@ CB to show solution
 Try this test. Follow the instructions in the comments to fill in one line of code at a time
 
 ```ts
-        it('should be invalid if username is not an email', async () => {
-            // go to login page
-            // get email input element
-            // set value to invalid email
-            // check if input is invalid - try method below
-            // expect(await browser.execute((elem: HTMLInputElement) => elem.checkValidity(), input)).toBe(false)
-        })
-        ```
+it('should be invalid if username is not an email', async () => {
+    // go to login page
+    // get email input element
+    // set value to invalid email
+    // check if input is invalid - try method below
+    // expect(await browser.execute((elem: HTMLInputElement) => elem.checkValidity(), input)).toBe(false)
+})
+```
+
 CB shows solution
 
 ## Next 3 tests
