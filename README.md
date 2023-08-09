@@ -193,9 +193,11 @@ Sauce Labs is great for:
 
 Please take 3 min to leave your [honest and anonymous feedback](https://docs.google.com/forms/d/e/1FAIpQLSefjACp8xGXRiSzzhoud9j18puDlc7lMjJB_HiGRQf-zia7tw/viewform?usp=sf_link)
 
-## Follow Christian
+## Join the WebdriverIO community
 
-CRISTIAN TO FILL IN
+- Follow WebdriverIO on [Twitter](https://twitter.com/webdriverio)
+- Ask any questions on [Discord](https://discord.webdriver.io)
+- Subscribe on [YouTube](https://youtube.com/@webdriverio)
 
 ## Follow Nikolay
 
