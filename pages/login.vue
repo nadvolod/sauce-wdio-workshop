@@ -44,7 +44,7 @@ async function signIn() {
             <label class="block mb-5">
               <div>Email</div>
 
-              <input class="w-full input" type="email" v-model="form.email" />
+              <input data-testid="emailInput" class="w-full input" type="email" v-model="form.email" />
             </label>
 
             <label class="block mb-5">
