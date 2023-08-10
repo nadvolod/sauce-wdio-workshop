@@ -8,7 +8,7 @@ Master automated software testing locally and in the cloud.
 
 ✅ Use Sauce Labs continuous testing grid
 
-✅ Use WebdriverIO comprehensive testing capabilities
+✅ Use [WebdriverIO](https://webdriver.io) comprehensive testing capabilities
 
 😉 And maybe more...
 
@@ -19,23 +19,23 @@ Master automated software testing locally and in the cloud.
 ## Table Of Contents
 
 - Setup
-- E2E UI testing w/ WebdriverIO
+- E2E UI testing w/ [WebdriverIO](https://webdriver.io)
 - Scaling automation to the cloud
 - Conclusions
 
 ## Your Co-Instructor: Christian Bromann
 
-<img src="public/images/family.jpg" alt="api-testing" height="200" width="200"/>
+<img src="https://user-images.githubusercontent.com/731337/259603794-493bdc08-e12e-455d-81c6-c93281359170.png" alt="Christian Bromann" height="200" width="200"/>
 
-- 🏢 X - FILL THIS SECTION IN
-- 🔭 Y [Ultimate QA](https://ultimateqa.com/)
-- 🚧 Z
-- 💬 Ask me about environmentalism, veganism, test automation, and fitness
+- 🏢 I’am a Founding Engineer at [Stateful](https://stateful.com)
+- 🤖 Lead Maintainer of the [WebdriverIO](https://webdriver.io) project
+- 💬 Ask me about automation, open source, testing, and techno
 - 😄 Pronouns: he/him
-- ⚡ Fun fact: I'm a vegan that's super pasionate about saving the planet, saving animals, and helping underpriveleged communities
-- 📫 Follow me for testing and dev training
-   - [LinkedIn for professional connections](https://www.linkedin.com/in/nikolayadvolodkin/)
-   - [Twitter for 🔥 Dev quotes](https://twitter.com/intent/follow?screen_name=nikolay_a00&region=follow_link)
+- ⚡ Fun fact I grew up on the country side in Germany next to 🐮 and 🐔
+- 📫 Follow me on my socials
+   - [LinkedIn for professional connections](https://www.linkedin.com/in/christian-bromann/)
+   - [Twitter for 🔥 Dev quotes](https://twitter.com/bromann)
+   - [GitHub for 🆓 code](https://github.com/christian-bromann)
 
 ## Your Co-Instructor: Nikolay Advolodkin
 
@@ -57,19 +57,13 @@ Master automated software testing locally and in the cloud.
 ## ⚙️ Setup
 
 1. Ensure you have [docker installed](https://docs.docker.com/get-docker/) and running
-2. Clone the repo or [![Run with VS Code](https://badgen.net/badge/Run%20with%20/VS%20Code/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fvueschool%2Fforge-4-poc.git&fileToOpen=README.md)
+2. Clone the repo or [![Run with VS Code](https://badgen.net/badge/Run%20with%20/VS%20Code/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fnadvolod%2Fsauce-wdio-workshop.git&fileToOpen=README.md)
 
 ```sh
-git clone git@github.com:vueschool/vue-forge-episode-4.git
+git clone git@github.com:nadvolod/sauce-wdio-workshop.git
 ```
 
-3. Start on the boilerplate branch
-
-```sh
-git checkout boilerplate
-```
-
-4. Install the dependencies
+3. Install the dependencies
 
 ```sh
 yarn
@@ -77,7 +71,7 @@ yarn
 npm install
 ```
 
-5. Start the Supabase service
+4. Start the Supabase service
 
 ```sh
 yarn supabase:start
@@ -85,7 +79,7 @@ yarn supabase:start
 npm run supabase:start
 ```
 
-6. The needed supabase environment variables will print after the service has started. Duplicate .env.example to .env and provide the following variables from the terminal print out.
+5. The needed supabase environment variables will print after the service has started. Duplicate .env.example to .env and provide the following variables from the terminal print out.
 
 ```sh
 # this can stay the same
@@ -102,7 +96,7 @@ You can also retrieve these at any time by running the following:
 npx supabase status
 ```
 
-7. Migrate and seed your database with initial schema and values by running:
+6. Migrate and seed your database with initial schema and values by running:
 
 ```sh
 yarn db:reset
@@ -110,7 +104,7 @@ yarn db:reset
 npm run db:reset
 ```
 
-8. Start the dev server
+7. Start the dev server
 
 ```sh
 yarn dev
@@ -118,8 +112,7 @@ yarn dev
 npm run dev
 ```
 
-9. [Follow these directions in the Devnet Setup Guide](https://vueschool.notion.site/DevNet-Setup-2ee973bf5061497d998823dd5cf43e6b?pvs=4) to get a local development blockchain network running.
-10. That's it! 🎉 You're ready to go.
+8. That's it! 🎉 You're ready to go.
 
 ## WebdriverIO + Sauce Setup
 
@@ -127,13 +120,11 @@ npm run dev
 - Have `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` set in your `.env` file based on your credentials that can be obtained in https://app.saucelabs.com/user-settings
 - Set up WebdriverIO in your project through `npm init wdio@latest .` 🤖 WebdriverIO will guide you through it, make sure you select:
    - `E2E Testing - of Web or Mobile Applications`
-   - `In the cloud using Sauce Labs`
+   - `On my local machine` (we will set up our Sauce Labs integration within the next step)
 
 ## 🏋️‍♂️ 1st Test
 
 Go to `tests/specs/exerciseslogin.test.ts` and try `it('should fail with no input')`
-
-CB to show solution
 
 ## 2nd test
 
@@ -149,16 +140,12 @@ it('should be invalid if username is not an email', async () => {
 })
 ```
 
-CB shows solution
-
 ## Next 3 tests
 
 Now try
 `it('email should be valid with valid email'`
 
 `it('should be fail if credentials are invalid'`
-
-CB shows solution
 
 ### Registration without a UI
 
@@ -177,17 +164,43 @@ Why would you want to run in a cloud grid like Sauce?
 - Ability to run on Windows/Mac and all other browsers
 - Ability to run on real mobile devices
 
-### Setup
+### Sauce Labs Integration
 
-1. CB TO ADD INSTRUCTIONS FOR HOW TO SETUP SAUCE LABS
+Few steps are required to run your tests on Sauce Labs:
 
-Now try to run your tests on Chrome/Safari/Windows/Mac. Use [this](https://saucelabs.com/products/platform-configurator) for help
+1. Install WebdriverIO's Sauce Labs integration service via `npx wdio install service sauce`
+1. Create a second config called `wdio.sauce.conf.ts` file for running on Sauce Labs
+  - Make it inherit local configuration, e.g.
+    ```js
+    import { config as localConfig } from './wdio.conf.js'
+    export const config = {
+      ...localConfig,
+      // Sauce Labs specific configurations
+      // ...
+    }
+    ```
+  - Add your user credentials, e.g.:
+    ```js
+    user: process.env.SAUCE_USERNAME,
+    key: process.env.SAUCE_ACCESS_KEY
+    ```
+  - Add the Sauce Labs integration service and enable [Sauce Connect Proxy](https://docs.saucelabs.com/secure-connections/sauce-connect/), e.g.:
+    ```js
+    services: [
+      'nuxt',
+      ['sauce', { sauceConnect: true }]
+    ]
+    ```
+  - Add more capabilities to run your tests on Chrome/Firefox/Edge/Safari on Windows/Mac on (see Sauce Labs's [Platform Configurator](https://saucelabs.com/products/platform-configurator) for help)
 
 ## Conclusions
 
 WebdriverIO is great for:
 
-- CHRISTIAN TO FILL IN
+- [Unit and component](https://webdriver.io/docs/component-testing), [native desktop](https://webdriver.io/docs/desktop-testing/macos), [Web](https://webdriver.io/docs/extension-testing/web-extensions) and [VS Code](https://webdriver.io/docs/extension-testing/vscode-extensions) Extension as well as E2E testing on web and mobile devices
+- Test web and mobile applications in real browser/devices that your users/customers are using (and not just browser engines)
+- Get unlimited parallelisation for free
+- Make use of countless reporters and plugins build by a [rich ecosystem](https://www.npmjs.com/search?q=keywords%3Awdio-service%2Cwdio-reporter)
 
 Sauce Labs is great for:
 
